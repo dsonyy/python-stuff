@@ -23,4 +23,4 @@ List of programming challanges - http://dsonyy.com/images/programming-challenges
 kids.
 02. Fizz Buzz - counts from 1 to N. If the numer is divisable by 3, say Fizz. 
 If by 5, say Buzz. If by 3 and 5, say FizzBuzz. 
-03. Higher Lower - you have to guess what's the number that the program chosen.
+03. Higher Lower - you have to guess what's the number that the program has chosen.
