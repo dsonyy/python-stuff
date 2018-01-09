@@ -19,6 +19,8 @@ Reddit Daily Programmer - https://www.reddit.com/r/dailyprogrammer/
 List of programming challanges - http://dsonyy.com/images/programming-challenges.png
 
 ### List of programs
+These programs were created using Python 3.6 and should work on Windows and Linux.
+
 01. Name Generator - program that generates unique and fantastic names for your
 kids.
 02. Fizz Buzz - counts from 1 to N. If the numer is divisable by 3, say Fizz. 
