@@ -9,5 +9,6 @@
 - **Live LCD Char Generator** - Generates custom characters for your LCD screens connected to Arduino in real time.
 	<p align="center"><img src="live-lcd-char-generator/preview.png"></p>
 - **Discord** - testing Discord webhooks and bots.
-- **numpy** - just playing and testing its features.
-- **pandas** - just playing and testing its features.
+- **numpy** - testing its features.
+- **pandas** - testing its features.
+- **matplotlib** - testing its features.
