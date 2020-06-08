@@ -10,3 +10,4 @@
 	<p align="center"><img src="live-lcd-char-generator/preview.png"></p>
 - **Discord** - testing Discord webhooks and bots.
 - **numpy** - just playing and testing its features.
+- **pandas** - just playing and testing its features.
