@@ -2,12 +2,12 @@
 
 There is a list of my uploaded projects and exercises (from the latest to the oldest):
 
-- **numpy** - examples/exercises notebook.
-- **pandas** - examples/exercises notebook.
-- **matplotlib** - examples/exercises notebook.
+- **geopandas** - examples/exercises notebook.
+- Miscellaneous/**sunpy** - examples/exercises notebook.
 - **sympy** - examples/exercises notebook.
-- Miscellaneous:
-	- **sunpy** - examples/exercises notebook.
+- **matplotlib** - examples/exercises notebook.
+- **pandas** - examples/exercises notebook.
+- **numpy** - examples/exercises notebook.
 - **Discord** - testing Discord webhooks and bots.
 - **Live LCD Char Generator** - Generates custom characters for your LCD screens connected to Arduino in real time:
 	<p align="center"><img src="live-lcd-char-generator/preview.png"></p>

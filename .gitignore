@@ -1,3 +1,9 @@
+# geo stuff
+*.dbf
+*.prj
+*.shp
+*.shx
+
 # jupyter
 .ipynb_checkpoints
 
