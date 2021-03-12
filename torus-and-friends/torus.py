@@ -1,11 +1,19 @@
 import platform
 import os
 import time
-from math import sqrt
+from math import sqrt, floor
+import numpy as np
 
-WIDTH = 40
-HEIGHT = 40
+WIDTH = 100
+HEIGHT = 100
 SZ = (WIDTH, HEIGHT)
+
+COLORSCALES = (
+    "0123456789",
+    "0123456789ABCDEF",
+    ".:;+=x$X#",
+    "░▒▓█",
+)
 
 
 def clear():
@@ -16,20 +24,30 @@ def clear():
         os.system("clear")
 
 
-def render(surf):
+def render(surf, colorscale_idx=-1):
+    colorscale = COLORSCALES[colorscale_idx]
+    min = np.nanmin(surf)
+    max = np.nanmax(surf)
+
     buffer = ""
     for row in surf:
-        for ch in row:
-            buffer += ch
+        for val in row:
+            if np.isnan(val):
+                buffer += " "
+            elif val == max:
+                buffer += colorscale[-1]
+            else:
+                idx = floor((val - min) / (max - min) * len(colorscale))
+                buffer += colorscale[idx]
         buffer += "\n"
     print(buffer, end="")
 
 
-def create_surface(w, h, ch="."):
-    return [[ch] * w] * h
+def create_surface(w, h):
+    return np.full((h, w), np.nan, dtype=np.single)
 
 
-def torus(w, h, surf, r, R):
+def torusdep(w, h, surf, r, R):
     for i in range(w):
         for j in range(h):
             x = i - w / 2
@@ -47,12 +65,52 @@ def torus(w, h, surf, r, R):
                 surf[j][i] = "#"  # sqrt(z_sq)
 
 
+def torus(x, y, r, R):
+    z_sq = r**2 - (sqrt(x**2 + y**2) - R)**2
+    # No real solutions
+    if z_sq < 0:
+        return None
+    # One real solution
+    elif z_sq == 0:
+        return 0
+    # Two real solutions (but we consider only the greatest one)
+    else:
+        return sqrt(z_sq)
+
+
+def sphere(x, y, r, x0=0, y0=0):
+    """
+    Formula:
+        (x - x0)**2 + (y - y0)**2 + (z - z0)**2 = r**2
+    """
+    z_sq = r**2 - (x - x0)**2 - (y - y0)**2
+    if z_sq < 0:
+        return None
+    elif z_sq == 0:
+        return 0
+    else:
+        return sqrt(z_sq)
+
+
+def draw(w, h, surf, fn, args=()):
+    for i in range(w):
+        for j in range(h):
+            x = i - w / 2
+            y = j - h / 2
+            z = fn(x, y, *args)
+            if not z is None:
+                surf[j, i] = z
+
+
 def main():
     """Program entry point."""
     while True:
         surf = create_surface(WIDTH, HEIGHT)
-        torus(WIDTH, HEIGHT, surf, 0.0001, 0.00001)
+        fn = torus
+        args = (10, 30)
+        draw(WIDTH, HEIGHT, surf, fn, args)
         render(surf)
+        break
         time.sleep(0.2)
         clear()
 
