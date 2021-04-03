@@ -2,6 +2,10 @@
 
 There is a list of my uploaded projects and exercises (from the latest to the oldest):
 
+- **Mandelbrot** - yet another Mandelbrot set generator in command line:
+
+  <p align="center"><img width=500 src="mandelbrot/preview.jpg">
+
 - **Galaxy generator** - generates an unique image of a spiral galaxy and saves it as SVG/PNG file with *matplotlib*.
 
   <p align="center"><img width=300 src="galaxy-generator/0.png"><img width=300 src="galaxy-generator/1.png"><img width=300 src="galaxy-generator/5.png"></p>
