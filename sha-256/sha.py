@@ -1,9 +1,10 @@
 """
-Implementation of SHA-256 (secure hash algorithm). Created for educational purposes.
+Implementation of SHA-256 (secure hash algorithm). Created for educational purposes only.
 """
 
 
 def rotate_right(a, n):
+    """Circular right shift of n bits of the binary word a."""
     a %= 2**32
     n %= 32
     x = a % 2**n
@@ -13,6 +14,7 @@ def rotate_right(a, n):
 
 
 def shift_right(a, n):
+    """Right shift of n bits of the binary word a."""
     return a >> n
 
 
