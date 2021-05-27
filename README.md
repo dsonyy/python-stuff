@@ -2,6 +2,8 @@
 
 There is a list of my uploaded projects and exercises (from the latest to the oldest):
 
+
+- **plots** - good-looking plots and data-science-realated stuff.
 - **Mandelbrot** - yet another Mandelbrot set generator in command line:
 
   <p align="center"><img width=500 src="mandelbrot/preview.jpg">
