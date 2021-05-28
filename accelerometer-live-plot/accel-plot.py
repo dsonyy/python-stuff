@@ -46,7 +46,7 @@ def animate(data, ax, plots, texts):
     sz = len(data)
 
     for s, series_name in enumerate(("Accel", "Gyro")):
-        ax[s].axis([0, sz, -3300, 3300])
+        ax[s].axis([0, sz, -35000, 35000])
 
         plots[s][0].set_data(np.arange(0, sz), data[:, s*3 + 0])
         plots[s][1].set_data(np.arange(0, sz), data[:, s*3 + 1])
