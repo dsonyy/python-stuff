@@ -2,7 +2,7 @@
 
 There is a list of my uploaded projects and exercises (from the latest to the oldest):
 
-- **accelerometer-live-plot** - real-time visualization tool for accelerometer data with 6 degrees of freedom.
+- **accelerometer-live-plot** - real-time visualization tool for accelerometer data with 6 degrees of freedom. [Nice YouTube video](https://www.youtube.com/watch?v=J4pH3LHojVM)
 <p align="center"><img width=500 src="accelerometer-live-plot/example.png"></p>
 - **plots** - good-looking plots and data-science-realated stuff.
 - **Mandelbrot** - yet another Mandelbrot set generator in command line:
