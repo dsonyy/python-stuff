@@ -65,7 +65,7 @@ def get_data():
     data = np.zeros((300, 6))
     yield data
     while True:
-        for _ in range(10):
+        for _ in range(40):
             v = [[int(i) for i in input().split()]]
             if len(data) >= 50:
                 data = np.append(data[1:], v, 0)
