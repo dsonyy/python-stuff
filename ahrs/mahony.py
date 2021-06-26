@@ -10,4 +10,4 @@ while True:
     g = np.array((gx, gy, gz))
 
     mahony.updateIMU(q=Q, acc=a, gyr=g)
-    print(*Q, sep="\t", flush=True)
+    print(Q[0] * 180, Q[1], Q[2], Q[3], sep="\t", flush=True)
