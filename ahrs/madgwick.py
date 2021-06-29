@@ -2,7 +2,7 @@ import numpy as np
 import ahrs
 from preprocess import preprocess
 
-mahony = ahrs.filters.Mahony()
+madgwick = ahrs.filters.Madgwick()
 
 Q = np.array([1., 0., 0., 0.])
 while True:
@@ -10,6 +10,6 @@ while True:
 
     a = np.array((ax, ay, az))
     g = np.array((gx, gy, gz))
-    mahony.updateIMU(q=Q, acc=a, gyr=g)
+    madgwick.updateIMU(q=Q, acc=a, gyr=g)
 
     print(Q[0] * 180, Q[1], Q[2], Q[3], sep="\t", flush=True)
