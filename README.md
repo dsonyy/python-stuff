@@ -2,6 +2,15 @@
 
 There is a list of my uploaded projects and exercises (from the latest to the oldest):
 
+- **ahrs** - playing with attitude and heading reference systems using [ahrs library](https://pypi.org/project/AHRS/) and [MPU-6050](https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/) data.
+
+  **See also:**  
+  [go-stuff/serial-read-accel](https://github.com/dsonyy/go-stuff) - reading accelerometer and gyroscope data frames sent via serial port (...).  
+  [go-stuff/serial-read-quaternion](https://github.com/dsonyy/go-stuff) - reading quaternion rotation data frames sent via serial port (...).  
+  [cpp-stuff/angle-visualization](https://github.com/dsonyy/cpp-stuff) - visualizing quaternion rotations (...).  
+  python-stuff/accelerometer-live-plot - below  
+  
+
 - **accelerometer-live-plot** - real-time visualization tool for accelerometer data with 6 degrees of freedom. [Nice YouTube video](https://www.youtube.com/watch?v=J4pH3LHojVM)
 <p align="center"><img width=500 src="accelerometer-live-plot/example.png"></p>
 
