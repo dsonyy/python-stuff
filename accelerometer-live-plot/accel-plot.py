@@ -66,11 +66,13 @@ def get_data():
     yield data
     while True:
         for _ in range(40):
-            v = [[int(i) for i in input().split()]]
+            w = input()
+            v = [[int(i) for i in w.split()]]
             if len(data) >= 50:
                 data = np.append(data[1:], v, 0)
             else:
                 data = np.append(data, v, 0)
+            print(w, flush=True)
         yield data
 
 
