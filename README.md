@@ -2,6 +2,8 @@
 
 There is a list of my uploaded projects and exercises (from the latest to the oldest):
 
+- **chaos-game** - implementation of [the chaos game](https://en.wikipedia.org/wiki/Chaos_game). [My Youtube video](https://www.youtube.com/watch?v=4fCrPIvEHP0).
+
 - **ahrs** - playing with attitude and heading reference systems using [ahrs library](https://pypi.org/project/AHRS/) and [MPU-6050](https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/) data.
 
   **See also:**  
