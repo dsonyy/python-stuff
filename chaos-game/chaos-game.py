@@ -60,7 +60,7 @@ def animate(frames, plot):
 
 def get_frames():
     # allocating data buffer
-    samples = 5000
+    samples = 7000
     pts = np.empty((samples, 2), np.float)
 
     while True:
