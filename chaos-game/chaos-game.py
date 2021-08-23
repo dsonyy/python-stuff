@@ -1,4 +1,3 @@
-from types import FrameType
 import matplotlib.pyplot as plt
 import matplotlib.animation as ani
 import numpy as np
