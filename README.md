@@ -2,6 +2,7 @@
 
 There is a list of my uploaded projects and exercises (from the latest to the oldest):
 
+- **normals** - playground for calculating normal vectors from terrain height maps.
 - **discrete-color-fields** - a script generating pictures loosely inspired by [Jan Pamuła](https://pl.wikipedia.org/wiki/Jan_Pamu%C5%82a_(grafik))'s artworks:
 
   <p align="center"><img width=200 src="discrete-color-fields/1629751570-9.png"><img width=200 src="discrete-color-fields/1629751415-9.png"><img width=200 src="discrete-color-fields/1629751485-9.png"><img width=200 src="discrete-color-fields/1629751297-9.png"></p>
