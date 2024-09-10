@@ -2,6 +2,7 @@
 
 There is a list of my uploaded projects and exercises (from the latest to the oldest):
 
+- **colors_generator** - finds `N` colors with the farthest hue in the HSL color space (with common H & S) for your plot. 
 - **normals** - playground for calculating normal vectors from terrain height maps.
 - **discrete-color-fields** - a script generating pictures loosely inspired by [Jan Pamuła](https://pl.wikipedia.org/wiki/Jan_Pamu%C5%82a_(grafik))'s artworks:
 
